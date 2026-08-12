@@ -1,0 +1,6 @@
+{
+  "name": "ODILO Table Talks Colombia 2026",
+  "description": "Landing page de conversión para el encuentro exclusivo de líderes C-Level en Bogotá: ODILO Table Talks 2026",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
