@@ -20,15 +20,12 @@ export const AboutSection: React.FC = () => {
               Un espacio estratégico diseñado para líderes que transforman organizaciones
             </h2>
 
-            <div className="space-y-4 text-[#484848] text-base leading-relaxed">
+            <div className="space-y-3 text-[#484848] text-base leading-relaxed">
               <p>
-                <strong className="text-[#0F0F0F] font-semibold">Letmino Table Talks Colombia</strong> es un encuentro exclusivo de alto nivel creado para reunir a decisores de Capital Humano, Tecnología y Transformación Digital de las principales corporaciones del país.
+                <strong className="text-[#0F0F0F] font-semibold">Letmino Table Talks Colombia</strong> es un encuentro exclusivo para decisores de Capital Humano, TI y Transformación Digital de las principales corporaciones del país.
               </p>
               <p>
-                En un entorno caracterizado por la rápida aceleración tecnológica y la irrupción de la inteligencia artificial, las organizaciones enfrentan el desafío crítico de evolucionar sus modelos de desarrollo de talento y capacidades estratégicas.
-              </p>
-              <p>
-                A través de un formato de cena exclusiva de cupos limitados, el evento ofrece una plataforma íntima para debatir soluciones reales, compartir aprendizajes sobre cultura de aprendizaje continuo y discutir cómo potenciar la competitividad de las empresas en Colombia con la <strong className="text-[#0F0F0F] font-semibold">Plataforma de Aprendizaje Digital de Letmino</strong>.
+                En un formato íntimo con cupos limitados, debatiremos soluciones reales para acelerar el desarrollo del talento, la cultura de aprendizaje continuo y el impacto de la IA estratégica en las organizaciones.
               </p>
             </div>
 

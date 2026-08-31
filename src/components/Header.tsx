@@ -50,12 +50,12 @@ export const Header: React.FC<HeaderProps> = ({ onCtaClick }) => {
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8 text-sm font-medium font-mono">
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-6 2xl:gap-8 text-xs xl:text-sm font-medium font-mono whitespace-nowrap shrink-0">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-[#484848] hover:text-[#0F0F0F] transition-colors py-1 focus:outline-none focus:ring-1 focus:ring-[#0F0F0F] rounded"
+                className="text-[#484848] hover:text-[#0F0F0F] transition-colors py-1 px-1 focus:outline-none focus:ring-1 focus:ring-[#0F0F0F] rounded whitespace-nowrap"
               >
                 {link.name}
               </a>
@@ -63,9 +63,9 @@ export const Header: React.FC<HeaderProps> = ({ onCtaClick }) => {
           </nav>
 
           {/* Header Actions */}
-          <div className="hidden sm:flex items-center gap-4">
+          <div className="hidden sm:flex items-center gap-3 xl:gap-4 shrink-0">
             {/* Solid #64DF65 badge with black text as per brandbook */}
-            <div className="hidden xl:flex items-center gap-2 text-xs text-[#0F0F0F] bg-[#64DF65] px-3.5 py-1.5 rounded-full font-bold font-mono">
+            <div className="hidden 2xl:flex items-center gap-2 text-xs text-[#0F0F0F] bg-[#64DF65] px-3.5 py-1.5 rounded-full font-bold font-mono whitespace-nowrap shrink-0">
               <span className="inline-block w-2 h-2 rounded-full bg-[#0F0F0F]" />
               <span>Bogotá • 17 Sep 2026</span>
             </div>
@@ -74,10 +74,10 @@ export const Header: React.FC<HeaderProps> = ({ onCtaClick }) => {
             <button
               onClick={onCtaClick}
               id="header-cta-button"
-              className="relative inline-flex items-center justify-center gap-2 px-6 py-2.5 text-xs sm:text-sm font-bold text-[#F0F0EE] bg-[#0F0F0F] hover:bg-[#262626] rounded-full shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#0F0F0F] cursor-pointer font-mono"
+              className="relative inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 text-xs sm:text-sm font-bold text-[#F0F0EE] bg-[#0F0F0F] hover:bg-[#262626] rounded-full shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#0F0F0F] cursor-pointer font-mono whitespace-nowrap shrink-0"
             >
               <span>Solicitar participación</span>
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4 shrink-0" />
             </button>
           </div>
 
