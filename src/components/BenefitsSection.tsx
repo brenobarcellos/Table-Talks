@@ -17,7 +17,7 @@ export const BenefitsSection: React.FC<BenefitsSectionProps> = ({ onCtaClick }) 
       icon: Cpu,
       title: 'Insights sobre IA y Cultura Aumentada',
       description:
-        'Conoce de primera mano cómo la inteligencia artificial está redefiniendo los ecosistemas de educación corporativa, formación y desarrollo de habilidades.',
+        'Conoce de primera mano cómo la inteligencia artificial está redefiniendo la formación y desarrollo de habilidades con la Plataforma de Aprendizaje Digital de Letmino.',
     },
     {
       icon: Network,
@@ -34,17 +34,17 @@ export const BenefitsSection: React.FC<BenefitsSectionProps> = ({ onCtaClick }) 
   ];
 
   return (
-    <section id="beneficios" className="py-20 bg-[#0B132B] relative border-y border-white/10">
+    <section id="beneficios" className="py-20 bg-[#0F0F0F] relative border-y border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#00D084]/10 border border-[#00D084]/25 text-[#00D084] text-xs font-bold uppercase tracking-widest">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#64DF65]/10 border border-[#64DF65]/25 text-[#64DF65] text-xs font-bold uppercase tracking-widest font-mono">
             <span>Valor para Ejecutivos</span>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            ¿Por qué asistir a ODILO Table Talks Bogotá?
+          <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-[#F0F0EE] tracking-tight">
+            ¿Por qué asistir a Letmino Table Talks Bogotá?
           </h2>
-          <p className="text-white/70 text-base sm:text-lg">
+          <p className="text-[#F0F0EE]/70 text-base sm:text-lg">
             Un encuentro pensado para maximizar el valor del tiempo de los ejecutivos más ocupados a través de contenido estratégico y relaciones de calidad.
           </p>
         </div>
@@ -55,20 +55,20 @@ export const BenefitsSection: React.FC<BenefitsSectionProps> = ({ onCtaClick }) 
             return (
               <div
                 key={index}
-                className="group p-6 sm:p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-[#00D084]/50 transition-all duration-300 hover:shadow-xl hover:shadow-[#00D084]/10 flex flex-col justify-between"
+                className="group p-6 sm:p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-[#64DF65]/50 transition-all duration-300 hover:shadow-xl hover:shadow-[#64DF65]/10 flex flex-col justify-between"
               >
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-[#00D084]/10 border border-[#00D084]/30 text-[#00D084] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#00D084] group-hover:text-[#0B132B] transition-all duration-300">
+                  <div className="w-12 h-12 rounded-xl bg-[#64DF65]/10 border border-[#64DF65]/30 text-[#64DF65] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#64DF65] group-hover:text-[#0F0F0F] transition-all duration-300">
                     <IconComponent className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#00D084] transition-colors">
+                  <h3 className="text-xl font-bold text-[#F0F0EE] mb-3 group-hover:text-[#64DF65] transition-colors">
                     {benefit.title}
                   </h3>
-                  <p className="text-white/70 text-sm leading-relaxed">
+                  <p className="text-[#F0F0EE]/70 text-sm leading-relaxed">
                     {benefit.description}
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-white/5 flex items-center text-xs font-bold text-[#00D084] opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="mt-6 pt-4 border-t border-white/5 flex items-center text-xs font-bold text-[#64DF65] opacity-0 group-hover:opacity-100 transition-opacity font-mono">
                   <span>Espacio exclusivo para decisores</span>
                 </div>
               </div>
@@ -80,7 +80,7 @@ export const BenefitsSection: React.FC<BenefitsSectionProps> = ({ onCtaClick }) 
         <div className="mt-12 text-center">
           <button
             onClick={onCtaClick}
-            className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-bold text-[#0B132B] bg-[#00D084] hover:bg-[#00B874] rounded-full transition shadow-lg shadow-[#00D084]/20 cursor-pointer"
+            className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-bold text-[#0F0F0F] bg-[#64DF65] hover:bg-[#4ECA50] rounded-full transition shadow-lg shadow-[#64DF65]/20 cursor-pointer font-mono"
           >
             <span>Solicitar participación</span>
             <ArrowRight className="w-4 h-4" />
@@ -91,4 +91,3 @@ export const BenefitsSection: React.FC<BenefitsSectionProps> = ({ onCtaClick }) 
     </section>
   );
 };
-

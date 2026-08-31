@@ -13,18 +13,16 @@ export const SpeakersSection: React.FC<SpeakersSectionProps> = ({ onCtaClick }) 
       roleTitle: 'GTM EMEA Lead',
       roleCategory: 'Amazon Web Services GTM & Expansion',
       organization: 'Amazon Web Services (AWS)',
-      initials: 'MP',
-      bio: 'Marco has spent the last 10 years working with software companies that want to go global — helping them scale and grow revenue. Today he focuses on Strategic ISV AI go-to-market and global expansion for high-growth SaaS at Amazon Web Services.',
+      bio: 'Marco cuenta con más de una década impulsando el crecimiento global de compañías de software. En AWS lidera la estrategia de go-to-market e inteligencia artificial para ISVs de alto crecimiento a escala internacional.',
       tag: 'Ponente Confirmado',
     },
     {
       isConfirmed: false,
-      name: 'Liderazgo ODILO Executive',
+      name: 'Liderazgo Letmino Executive',
       roleTitle: 'Executive Leadership',
       roleCategory: 'Estrategia de Cultura Aumentada',
-      organization: 'ODILO',
-      initials: null,
-      bio: 'Decisiones humanas y cultura de aprendizaje para una organización impulsada por inteligencia artificial en América Latina.',
+      organization: 'Letmino',
+      bio: 'Decisiones humanas y cultura de aprendizaje para una organización impulsada por inteligencia artificial en América Latina a través de la Plataforma de Aprendizaje Digital de Letmino.',
       tag: 'Executive Speaker (A confirmar)',
     },
     {
@@ -33,25 +31,24 @@ export const SpeakersSection: React.FC<SpeakersSectionProps> = ({ onCtaClick }) 
       roleTitle: 'CHROs, CTOs & VPs Enterprise',
       roleCategory: 'Panel de Decisores Enterprise',
       organization: 'Líderes de RRHH, TI & Digital (Banca, Retail & Servicios)',
-      initials: null,
       bio: 'Desafíos reales de talento, reskilling corporativo y adopción de tecnología en grandes organizaciones en Colombia.',
       tag: 'Panelistas Invitados (A confirmar)',
     },
   ];
 
   return (
-    <section id="speakers" className="py-20 bg-[#0B132B] relative border-y border-white/10">
+    <section id="speakers" className="py-20 bg-[#F0F0EE] relative border-y border-[#0F0F0F]/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#00D084]/10 border border-[#00D084]/25 text-[#00D084] text-xs font-bold uppercase tracking-widest">
-            <UserCheck className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#0F0F0F]/10 text-[#0F0F0F] text-xs font-bold uppercase tracking-widest font-mono shadow-sm">
+            <UserCheck className="w-3.5 h-3.5 text-[#0F0F0F]" />
             <span>Panel de Conferencistas</span>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-[#0F0F0F] tracking-tight">
             Speakers y Panelistas Destacados
           </h2>
-          <p className="text-white/70 text-base sm:text-lg">
+          <p className="text-[#484848] text-base sm:text-lg">
             Reuniendo a líderes de opinión de primer nivel de las organizaciones referentes en tecnología, aprendizaje corporativo y gestión humana.
           </p>
         </div>
@@ -61,56 +58,56 @@ export const SpeakersSection: React.FC<SpeakersSectionProps> = ({ onCtaClick }) 
           {confirmedSpeakers.map((item, index) => (
             <div
               key={index}
-              className={`rounded-2xl p-6 sm:p-8 relative flex flex-col justify-between overflow-hidden transition-all duration-300 shadow-xl ${
+              className={`rounded-2xl p-6 sm:p-8 relative flex flex-col justify-between transition-all duration-300 shadow-sm bg-white border ${
                 item.isConfirmed
-                  ? 'bg-gradient-to-b from-white/10 to-white/5 border border-[#00D084]/40 hover:border-[#00D084] shadow-[#00D084]/5'
-                  : 'bg-white/5 border border-white/10 hover:border-[#00D084]/40'
+                  ? 'border-[#0F0F0F]/20 hover:border-[#0F0F0F] ring-1 ring-[#0F0F0F]/5'
+                  : 'border-[#0F0F0F]/10 hover:border-[#0F0F0F]/30'
               }`}
             >
-              {/* Subtle Status Ribbon */}
-              <div
-                className={`absolute top-4 right-4 flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium ${
-                  item.isConfirmed
-                    ? 'bg-[#00D084]/15 border border-[#00D084]/40 text-[#00D084] font-bold'
-                    : 'bg-black/40 border border-white/15 text-white/60'
-                }`}
-              >
-                {item.isConfirmed ? (
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#00D084]" />
-                ) : (
-                  <Clock className="w-3.5 h-3.5 text-white/50" />
-                )}
-                <span>{item.tag}</span>
-              </div>
-
               <div>
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-[#00D084]/15 text-[#00D084] border border-[#00D084]/30">
-                    <Building2 className="w-3.5 h-3.5" />
+                {/* Header tags in a non-overlapping flex container */}
+                <div className="flex flex-wrap items-center justify-between gap-2.5 mb-5">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-[#0F0F0F]/5 text-[#0F0F0F] border border-[#0F0F0F]/10 font-mono">
+                    <Building2 className="w-3.5 h-3.5 text-[#0F0F0F]" />
                     <span>{item.organization}</span>
+                  </span>
+
+                  <span
+                    className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-bold ${
+                      item.isConfirmed
+                        ? 'bg-[#64DF65] text-[#0F0F0F] shadow-sm'
+                        : 'bg-[#0F0F0F]/5 text-[#484848] border border-[#0F0F0F]/10'
+                    }`}
+                  >
+                    {item.isConfirmed ? (
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[#0F0F0F]" />
+                    ) : (
+                      <Clock className="w-3.5 h-3.5 text-[#484848]" />
+                    )}
+                    <span>{item.tag}</span>
                   </span>
                 </div>
 
-                <div className="text-xs font-bold text-white/50 uppercase tracking-wider mb-1">
+                <div className="text-xs font-bold text-[#484848] uppercase tracking-wider mb-1 font-mono">
                   {item.roleCategory}
                 </div>
 
-                <h3 className="text-2xl font-bold text-white mb-1">
+                <h3 className="text-2xl font-bold text-[#0F0F0F] mb-1 font-display">
                   {item.name}
                 </h3>
 
-                <p className="text-sm font-semibold text-[#00D084] mb-4">
+                <p className="text-sm font-semibold text-[#0F0F0F] mb-4 font-mono">
                   {item.roleTitle}
                 </p>
 
-                <p className="text-white/70 text-xs sm:text-sm leading-relaxed border-t border-white/10 pt-4">
+                <p className="text-[#484848] text-xs sm:text-sm leading-relaxed border-t border-[#0F0F0F]/10 pt-4">
                   {item.bio}
                 </p>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-white/50">
-                <span className="flex items-center gap-1.5 text-white/80 font-medium">
-                  <Shield className="w-3.5 h-3.5 text-[#00D084]" />
+              <div className="mt-6 pt-4 border-t border-[#0F0F0F]/10 flex items-center justify-between text-xs text-[#484848] font-mono">
+                <span className="flex items-center gap-1.5 text-[#0F0F0F] font-medium">
+                  <Shield className="w-3.5 h-3.5 text-[#0F0F0F]" />
                   {item.isConfirmed ? 'Ponente Confirmado AWS' : 'Perfil C-Level / Senior Executive'}
                 </span>
               </div>
@@ -119,21 +116,21 @@ export const SpeakersSection: React.FC<SpeakersSectionProps> = ({ onCtaClick }) 
         </div>
 
         {/* Notice Banner */}
-        <div className="mt-10 p-4 sm:p-6 rounded-2xl bg-white/5 border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 max-w-4xl mx-auto backdrop-blur-md hover:border-[#00D084]/30 transition">
+        <div className="mt-10 p-4 sm:p-6 rounded-2xl bg-white border border-[#0F0F0F]/10 flex flex-col sm:flex-row items-center justify-between gap-4 max-w-4xl mx-auto shadow-sm">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-[#00D084]/10 border border-[#00D084]/30 flex items-center justify-center text-[#00D084] flex-shrink-0">
+            <div className="w-10 h-10 rounded-full bg-[#0F0F0F]/5 flex items-center justify-center text-[#0F0F0F] flex-shrink-0">
               <Sparkles className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-sm font-bold text-white">Ponentes de Alto Impacto para ODILO Table Talks</div>
-              <p className="text-xs text-white/70">
+              <div className="text-sm font-bold text-[#0F0F0F]">Ponentes de Alto Impacto para Letmino Table Talks</div>
+              <p className="text-xs text-[#484848]">
                 Acompaña a Marco Politi (AWS) y otros líderes ejecutivos en esta mesa de discusión privada sobre IA y talento.
               </p>
             </div>
           </div>
           <button
             onClick={onCtaClick}
-            className="px-5 py-2.5 text-xs font-bold text-[#0B132B] bg-[#00D084] hover:bg-[#00B874] rounded-full transition shadow-md whitespace-nowrap cursor-pointer"
+            className="px-5 py-2.5 text-xs font-bold text-[#F0F0EE] bg-[#0F0F0F] hover:bg-[#262626] rounded-full transition shadow-md whitespace-nowrap cursor-pointer font-mono"
           >
             Solicitar participación
           </button>
@@ -143,4 +140,3 @@ export const SpeakersSection: React.FC<SpeakersSectionProps> = ({ onCtaClick }) 
     </section>
   );
 };
-

@@ -3,19 +3,26 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-    background-color: #0B132B;
-    color: #ffffff;
+    font-family: 'IBM Plex Mono', monospace, system-ui, sans-serif;
+    background-color: #F0F0EE;
+    color: #0F0F0F;
   }
 
   body {
-    background-color: #0B132B;
-    color: #ffffff;
+    background-color: #F0F0EE;
+    color: #0F0F0F;
+    font-family: 'IBM Plex Mono', monospace, system-ui, sans-serif;
   }
 
   h1, h2, h3, .font-display {
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-    letter-spacing: -0.025em;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background-color: #64DF65;
+    color: #0F0F0F;
   }
 }
 

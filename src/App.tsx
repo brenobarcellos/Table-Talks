@@ -11,6 +11,7 @@ import { AboutSection } from './components/AboutSection';
 import { ThemesSection } from './components/ThemesSection';
 import { SpeakersSection } from './components/SpeakersSection';
 import { AgendaSection } from './components/AgendaSection';
+import { ClosingSection } from './components/ClosingSection';
 import { FormSection } from './components/FormSection';
 import { Footer } from './components/Footer';
 
@@ -25,7 +26,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0B132B] text-slate-100 flex flex-col font-sans selection:bg-[#00D084] selection:text-[#0B132B]">
+    <div className="min-h-screen bg-[#F0F0EE] text-[#0F0F0F] flex flex-col font-mono selection:bg-[#64DF65] selection:text-[#0F0F0F]">
       {/* Sticky Executive Navigation */}
       <Header onCtaClick={handleScrollToForm} />
 
@@ -37,6 +38,7 @@ export default function App() {
         <ThemesSection />
         <SpeakersSection onCtaClick={handleScrollToForm} />
         <AgendaSection />
+        <ClosingSection onCtaClick={handleScrollToForm} />
         <FormSection />
       </main>
 
@@ -45,4 +47,3 @@ export default function App() {
     </div>
   );
 }
-

@@ -13,7 +13,7 @@ export const AgendaSection: React.FC = () => {
     {
       time: '3:30 – 3:45 p. m.',
       title: 'Apertura y bienvenida oficial',
-      description: 'Introducción al concepto ODILO Table Talks Bogotá y presentación del propósito del encuentro.',
+      description: 'Introducción al concepto Letmino Table Talks Bogotá y presentación del propósito del encuentro.',
       tag: 'Bienvenida',
       icon: CalendarCheck,
     },
@@ -27,9 +27,9 @@ export const AgendaSection: React.FC = () => {
     },
     {
       time: '4:30 – 4:45 p. m.',
-      title: 'ODILO: Cultura aumentada, decisiones humanas para una organización impulsada por IA',
-      description: 'Presentación sobre el equilibrio entre la aceleración tecnológica y el desarrollo del talento humano.',
-      tag: 'ODILO Insight',
+      title: 'Letmino: Cultura aumentada, decisiones humanas para una organización impulsada por IA',
+      description: 'Presentación sobre el equilibrio entre la aceleración tecnológica y el desarrollo del talento humano con la Plataforma de Aprendizaje Digital de Letmino.',
+      tag: 'Letmino Insight',
       icon: Building2,
       highlight: true,
     },
@@ -51,24 +51,24 @@ export const AgendaSection: React.FC = () => {
   ];
 
   return (
-    <section id="agenda" className="py-20 bg-[#0B132B] relative border-y border-white/10">
+    <section id="agenda" className="py-20 bg-[#F0F0EE] relative border-y border-[#0F0F0F]/10">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#00D084]/10 border border-[#00D084]/25 text-[#00D084] text-xs font-bold uppercase tracking-widest">
-            <Clock className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#0F0F0F]/10 text-[#0F0F0F] text-xs font-bold uppercase tracking-widest font-mono shadow-sm">
+            <Clock className="w-3.5 h-3.5 text-[#0F0F0F]" />
             <span>Cronograma del Encuentro</span>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-[#0F0F0F] tracking-tight">
             Agenda preliminar
           </h2>
-          <p className="text-white/70 text-base sm:text-lg">
-            Jueves 17 de septiembre de 2026 • After office en Sede AWS - Bogotá
+          <p className="text-[#484848] text-base sm:text-lg font-mono">
+            Jueves 17 de septiembre de 2026 • After office en AWS Torre Pacific, Piso 14
           </p>
         </div>
 
         {/* Timeline List */}
-        <div className="relative border-l-2 border-white/10 ml-4 sm:ml-32 space-y-8">
+        <div className="relative border-l-2 border-[#0F0F0F]/10 ml-4 sm:ml-32 space-y-8">
           {agendaItems.map((item, index) => {
             const IconComponent = item.icon;
             return (
@@ -77,40 +77,40 @@ export const AgendaSection: React.FC = () => {
                 <div
                   className={`absolute -left-[17px] top-1.5 w-8 h-8 rounded-full flex items-center justify-center border transition-all ${
                     item.highlight
-                      ? 'bg-[#0B132B] border-[#00D084] text-[#00D084] group-hover:scale-110 group-hover:bg-[#00D084] group-hover:text-[#0B132B]'
-                      : 'bg-[#0B132B] border-white/20 text-white/40 group-hover:border-[#00D084]/50'
+                      ? 'bg-[#64DF65] border-[#0F0F0F]/20 text-[#0F0F0F] shadow-sm'
+                      : 'bg-white border-[#0F0F0F]/20 text-[#0F0F0F]'
                   }`}
                 >
                   <IconComponent className="w-4 h-4" />
                 </div>
 
                 {/* Time Badge (Desktop Absolute Left) */}
-                <div className="hidden sm:block absolute -left-36 top-2 w-28 text-right font-mono text-xs font-bold text-[#00D084]">
+                <div className="hidden sm:block absolute -left-36 top-2 w-28 text-right font-mono text-xs font-bold text-[#0F0F0F]">
                   {item.time}
                 </div>
 
                 {/* Agenda Card */}
                 <div
-                  className={`rounded-2xl p-5 sm:p-6 transition-all duration-300 ${
+                  className={`rounded-2xl p-5 sm:p-6 transition-all duration-300 bg-white border shadow-sm ${
                     item.highlight
-                      ? 'bg-white/5 border border-white/10 hover:border-[#00D084]/40 shadow-lg'
-                      : 'bg-white/5 border border-white/10 opacity-90'
+                      ? 'border-[#0F0F0F]/20 ring-1 ring-[#0F0F0F]/5'
+                      : 'border-[#0F0F0F]/10 opacity-95'
                   }`}
                 >
                   <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-                    <span className="sm:hidden font-mono text-xs font-bold text-[#00D084] bg-black/40 px-2.5 py-1 rounded">
+                    <span className="sm:hidden font-mono text-xs font-bold text-[#0F0F0F] bg-[#0F0F0F]/5 px-2.5 py-1 rounded">
                       {item.time}
                     </span>
-                    <span className="px-3 py-0.5 rounded-full text-[11px] font-bold bg-[#00D084]/10 text-[#00D084] border border-[#00D084]/25">
+                    <span className="px-3 py-0.5 rounded-full text-[11px] font-bold bg-[#0F0F0F]/5 text-[#0F0F0F] border border-[#0F0F0F]/10 font-mono">
                       {item.tag}
                     </span>
                   </div>
 
-                  <h3 className="text-lg font-bold text-white mb-2 group-hover:text-[#00D084] transition-colors">
+                  <h3 className="text-lg font-bold text-[#0F0F0F] mb-2 font-display">
                     {item.title}
                   </h3>
 
-                  <p className="text-white/70 text-xs sm:text-sm leading-relaxed">
+                  <p className="text-[#484848] text-xs sm:text-sm leading-relaxed">
                     {item.description}
                   </p>
                 </div>
@@ -119,8 +119,8 @@ export const AgendaSection: React.FC = () => {
           })}
         </div>
 
-        <div className="mt-12 p-4 rounded-xl bg-white/5 border border-white/10 text-center text-xs text-white/60 flex items-center justify-center gap-2">
-          <MapPin className="w-4 h-4 text-[#00D084] flex-shrink-0" />
+        <div className="mt-12 p-4 rounded-xl bg-white border border-[#0F0F0F]/10 text-center text-xs text-[#484848] flex items-center justify-center gap-2 shadow-sm font-mono">
+          <MapPin className="w-4 h-4 text-[#0F0F0F] flex-shrink-0" />
           <span>Agenda sujeta a confirmaciones finales junto con el tema oficial del encuentro.</span>
         </div>
 
@@ -128,4 +128,3 @@ export const AgendaSection: React.FC = () => {
     </section>
   );
 };
-

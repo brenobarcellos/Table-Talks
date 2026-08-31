@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { OdiloLogo } from './OdiloLogo';
+import { LetminoLogo } from './LetminoLogo';
 import { Menu, X, ArrowRight, Calendar, MapPin } from 'lucide-react';
 
 interface HeaderProps {
@@ -12,7 +12,7 @@ export const Header: React.FC<HeaderProps> = ({ onCtaClick }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
+      if (window.scrollY > 15) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -34,28 +34,28 @@ export const Header: React.FC<HeaderProps> = ({ onCtaClick }) => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#0B132B]/95 backdrop-blur-md border-b border-white/10 shadow-2xl py-3'
-          : 'bg-gradient-to-b from-[#0B132B] via-[#0B132B]/80 to-transparent py-5'
+          ? 'bg-[#F0F0EE]/92 backdrop-blur-md border-b border-[#0F0F0F]/8 shadow-sm py-3'
+          : 'bg-[#F0F0EE]/92 backdrop-blur-md border-b border-[#0F0F0F]/8 py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo - Compact single-line lockup with black text */}
           <a
             href="#"
-            className="group focus:outline-none focus:ring-2 focus:ring-[#00D084] rounded-lg p-1 transition"
-            aria-label="ODILO Table Talks Inicio"
+            className="group focus:outline-none focus:ring-2 focus:ring-[#0F0F0F] rounded-lg p-1 transition"
+            aria-label="Letmino Table Talks Inicio"
           >
-            <OdiloLogo showSubtitle={false} />
+            <LetminoLogo variant="horizontal" theme="light" size="sm" showSubtitle={false} />
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8 text-sm font-medium">
+          <nav className="hidden lg:flex items-center gap-8 text-sm font-medium font-mono">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-white/70 hover:text-[#00D084] transition-colors py-1 focus:outline-none focus:ring-1 focus:ring-[#00D084] rounded"
+                className="text-[#484848] hover:text-[#0F0F0F] transition-colors py-1 focus:outline-none focus:ring-1 focus:ring-[#0F0F0F] rounded"
               >
                 {link.name}
               </a>
@@ -64,15 +64,17 @@ export const Header: React.FC<HeaderProps> = ({ onCtaClick }) => {
 
           {/* Header Actions */}
           <div className="hidden sm:flex items-center gap-4">
-            <div className="hidden xl:flex items-center gap-2 text-xs text-[#00D084] bg-[#00D084]/10 border border-[#00D084]/30 px-3.5 py-1.5 rounded-full font-semibold">
-              <span className="inline-block w-2 h-2 rounded-full bg-[#00D084] animate-pulse" />
+            {/* Solid #64DF65 badge with black text as per brandbook */}
+            <div className="hidden xl:flex items-center gap-2 text-xs text-[#0F0F0F] bg-[#64DF65] px-3.5 py-1.5 rounded-full font-bold font-mono">
+              <span className="inline-block w-2 h-2 rounded-full bg-[#0F0F0F]" />
               <span>Bogotá • 17 Sep 2026</span>
             </div>
 
+            {/* Primary Black CTA Button */}
             <button
               onClick={onCtaClick}
               id="header-cta-button"
-              className="relative inline-flex items-center justify-center gap-2 px-6 py-2.5 text-xs sm:text-sm font-bold text-[#0B132B] bg-[#00D084] hover:bg-[#00B874] rounded-full shadow-lg shadow-[#00D084]/20 transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#00D084] cursor-pointer"
+              className="relative inline-flex items-center justify-center gap-2 px-6 py-2.5 text-xs sm:text-sm font-bold text-[#F0F0EE] bg-[#0F0F0F] hover:bg-[#262626] rounded-full shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#0F0F0F] cursor-pointer font-mono"
             >
               <span>Solicitar participación</span>
               <ArrowRight className="w-4 h-4" />
@@ -83,13 +85,13 @@ export const Header: React.FC<HeaderProps> = ({ onCtaClick }) => {
           <div className="flex sm:hidden items-center gap-2">
             <button
               onClick={onCtaClick}
-              className="px-3 py-1.5 text-xs font-bold text-[#0B132B] bg-[#00D084] hover:bg-[#00B874] rounded-full transition shadow-sm"
+              className="px-3.5 py-1.5 text-xs font-bold text-[#F0F0EE] bg-[#0F0F0F] hover:bg-[#262626] rounded-full transition shadow-sm cursor-pointer font-mono"
             >
               Participar
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-white/70 hover:text-white bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00D084]"
+              className="p-2 text-[#484848] hover:text-[#0F0F0F] bg-white border border-[#0F0F0F]/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0F0F0F] cursor-pointer shadow-sm"
               aria-label={mobileMenuOpen ? 'Cerrar menú' : 'Abrir menú de navegación'}
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -100,23 +102,23 @@ export const Header: React.FC<HeaderProps> = ({ onCtaClick }) => {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#0B132B]/98 backdrop-blur-xl border-b border-white/10 px-4 pt-4 pb-6 mt-2 space-y-4 shadow-2xl animate-fadeIn">
-          <div className="flex items-center justify-between pb-3 border-b border-white/10 text-xs text-white/60">
+        <div className="lg:hidden bg-[#F0F0EE]/98 backdrop-blur-xl border-b border-[#0F0F0F]/10 px-4 pt-4 pb-6 mt-2 space-y-4 shadow-xl animate-fadeIn">
+          <div className="flex items-center justify-between pb-3 border-b border-[#0F0F0F]/10 text-xs text-[#484848] font-mono">
             <span className="flex items-center gap-1.5">
-              <Calendar className="w-3.5 h-3.5 text-[#00D084]" /> 17 de septiembre de 2026
+              <Calendar className="w-3.5 h-3.5 text-[#0F0F0F]" /> 17 de septiembre de 2026
             </span>
             <span className="flex items-center gap-1.5">
-              <MapPin className="w-3.5 h-3.5 text-[#00D084]" /> Bogotá, Colombia
+              <MapPin className="w-3.5 h-3.5 text-[#0F0F0F]" /> Torre Pacific, Bogotá
             </span>
           </div>
 
-          <nav className="flex flex-col gap-2">
+          <nav className="flex flex-col gap-2 font-mono">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-3 py-2 text-sm font-medium text-white/80 hover:text-[#00D084] hover:bg-white/5 rounded-lg transition"
+                className="px-3 py-2 text-sm font-medium text-[#484848] hover:text-[#0F0F0F] hover:bg-white rounded-lg transition"
               >
                 {link.name}
               </a>
@@ -129,7 +131,7 @@ export const Header: React.FC<HeaderProps> = ({ onCtaClick }) => {
                 setMobileMenuOpen(false);
                 onCtaClick();
               }}
-              className="w-full flex items-center justify-center gap-2 py-3 px-4 text-sm font-bold text-[#0B132B] bg-[#00D084] hover:bg-[#00B874] rounded-xl shadow-lg shadow-[#00D084]/20"
+              className="w-full flex items-center justify-center gap-2 py-3 px-4 text-sm font-bold text-[#F0F0EE] bg-[#0F0F0F] hover:bg-[#262626] rounded-xl shadow-md cursor-pointer font-mono"
             >
               <span>Solicitar participación</span>
               <ArrowRight className="w-4 h-4" />
@@ -140,4 +142,3 @@ export const Header: React.FC<HeaderProps> = ({ onCtaClick }) => {
     </header>
   );
 };
-
