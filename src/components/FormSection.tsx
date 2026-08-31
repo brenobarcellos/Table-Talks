@@ -22,7 +22,7 @@ export const FormSection: React.FC = () => {
             Solicitar participación
           </h2>
           <p className="text-[#484848] text-base sm:text-lg">
-            Completa el siguiente formulario corporativo para enviar tu solicitud de plaza para la cena exclusiva en Bogotá.
+            Completa el siguiente formulario corporativo para enviar tu solicitud de plaza para el encuentro exclusivo en Bogotá.
           </p>
         </div>
 
@@ -36,7 +36,7 @@ export const FormSection: React.FC = () => {
             </div>
             <div className="flex items-center gap-1.5 text-[#484848] font-mono">
               <Lock className="w-4 h-4 text-[#0F0F0F]" />
-              <span>Conexión cifrada de alta seguridad</span>
+              <span>Formulario seguro</span>
             </div>
           </div>
 

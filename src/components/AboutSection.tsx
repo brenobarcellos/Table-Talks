@@ -62,7 +62,7 @@ export const AboutSection: React.FC = () => {
                 </div>
                 <div>
                   <div className="text-[11px] font-bold text-[#484848] uppercase tracking-wider font-mono">Formato Exclusivo</div>
-                  <div className="text-lg font-bold text-[#0F0F0F]">Cena Ejecutiva & Mesa Redonda</div>
+                  <div className="text-lg font-bold text-[#0F0F0F]">Cóctel Ejecutivo & Mesa Redonda</div>
                 </div>
               </div>
 

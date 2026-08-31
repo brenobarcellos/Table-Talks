@@ -32,16 +32,16 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
 
           {/* Main Title - Single H1 tag with solid green background marker highlight behind "talento" */}
           <h1 className="font-display text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#0F0F0F] leading-[1.15]">
-            Redefiniendo el futuro del{' '}
+            El futuro del{' '}
             <span className="bg-[#64DF65] text-[#0F0F0F] px-2.5 sm:px-3 py-0.5 rounded-lg inline-block mx-1">
               talento
             </span>{' '}
-            y la inteligencia artificial
+            se decide en conversaciones como esta
           </h1>
 
           {/* Subtitle / Concept */}
           <p className="text-base sm:text-lg md:text-xl text-[#484848] max-w-3xl mx-auto font-normal leading-relaxed">
-            Una cena estratégica exclusiva para líderes de Capital Humano, TI y Transformación Digital de las principales empresas de Colombia.
+            Un encuentro estratégico exclusivo para líderes de Capital Humano, TI y Transformación Digital de las principales empresas de Colombia.
           </p>
 
           {/* Key Facts Pills Grid */}

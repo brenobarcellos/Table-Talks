@@ -48,11 +48,11 @@ export const PracticalInfoSection: React.FC = () => {
               <div className="text-xs font-bold text-[#484848] uppercase tracking-wider mb-1 font-mono">Horario</div>
               <div className="text-xl font-bold text-[#0F0F0F]">After office (3:00 - 6:15 PM)</div>
               <p className="text-xs text-[#484848] mt-1 leading-relaxed">
-                Acreditación desde las 3:00 p. m. seguido de keynote, panel y cena.
+                Acreditación desde las 3:00 p. m. seguido de keynote, panel y cóctel.
               </p>
             </div>
             <p className="text-xs text-[#484848] mt-4 border-t border-[#0F0F0F]/10 pt-3 font-mono">
-              Formato: Cóctel de bienvenida, Debate C-Level y Cena
+              Formato: Cóctel de bienvenida, Debate C-Level y Networking
             </p>
           </div>
 

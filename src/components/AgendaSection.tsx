@@ -43,10 +43,11 @@ export const AgendaSection: React.FC = () => {
     },
     {
       time: '6:00 – 6:15 p. m.',
-      title: 'Foto grupal y cierre del evento',
-      description: 'Fotografía institucional de los líderes participantes y despedida formal del encuentro.',
-      tag: 'Cierre',
+      title: 'Cóctel & Networking Ejecutivo',
+      description: 'Networking cualificado alrededor de una estación de cóctel y pasabocas, junto a la fotografía institucional de cierre.',
+      tag: 'Networking',
       icon: Clock,
+      highlight: true,
     },
   ];
 
