@@ -46,13 +46,13 @@ export const PracticalInfoSection: React.FC = () => {
                 <Clock className="w-5 h-5" />
               </div>
               <div className="text-xs font-bold text-[#484848] uppercase tracking-wider mb-1 font-mono">Horario</div>
-              <div className="text-xl font-bold text-[#0F0F0F]">After office (3:00 - 6:15 PM)</div>
+              <div className="text-xl font-bold text-[#0F0F0F]">3:00 a 6:15 p. m.</div>
               <p className="text-xs text-[#484848] mt-1 leading-relaxed">
-                Acreditación desde las 3:00 p. m. seguido de keynote, panel y cóctel.
+                Recepción y pasabocas desde las 3:00 p. m., seguido de apertura oficial, conferencias, panel C-Level y cóctel de networking.
               </p>
             </div>
             <p className="text-xs text-[#484848] mt-4 border-t border-[#0F0F0F]/10 pt-3 font-mono">
-              Formato: Cóctel de bienvenida, Debate C-Level y Networking
+              Formato: Buffet ligero tipo cóctel, Keynote AWS, Panel y Networking
             </p>
           </div>
 
@@ -62,13 +62,18 @@ export const PracticalInfoSection: React.FC = () => {
                 <MapPin className="w-5 h-5" />
               </div>
               <div className="text-xs font-bold text-[#484848] uppercase tracking-wider mb-1 font-mono">Ubicación y Sede Anfitriona</div>
-              <div className="text-2xl font-bold text-[#0F0F0F]">Oficinas AWS - Torre Empresarial Pacific</div>
+              <div className="text-2xl font-bold text-[#0F0F0F]">Oficinas AWS — Torre Empresarial Pacific</div>
               <p className="text-sm text-[#484848] mt-1 font-mono">
                 Calle 110 # 9-25, Piso 14, Bogotá, Colombia
               </p>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-[#0F0F0F]/10 flex flex-wrap items-center justify-between gap-3">
+            {/* Buffet details note */}
+            <div className="mt-4 p-3.5 rounded-xl bg-[#F0F0EE] border border-[#0F0F0F]/10 text-xs text-[#484848] leading-relaxed">
+              <strong className="text-[#0F0F0F]">Formato gastronómico:</strong> Evento vespertino con buffet ligero tipo cóctel. Recepción y pasabocas concentrados entre 3:00 y 3:30 p. m., servicio discreto durante la apertura (hasta las 3:45 p. m.), y estación fija de bebidas y pasabocas en la parte posterior de la sala durante las conferencias y el panel.
+            </div>
+
+            <div className="mt-5 pt-4 border-t border-[#0F0F0F]/10 flex flex-wrap items-center justify-between gap-3">
               <a
                 href={mapsUrl}
                 target="_blank"

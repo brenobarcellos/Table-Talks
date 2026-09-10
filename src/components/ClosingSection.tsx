@@ -42,7 +42,7 @@ export const ClosingSection: React.FC<ClosingSectionProps> = ({ onCtaClick }) =>
             <ShieldCheck className="w-4 h-4 text-[#0F0F0F]" /> Confirmación por perfil corporativo
           </span>
           <span className="w-1 h-1 rounded-full bg-[#0F0F0F]/20 hidden sm:inline-block" />
-          <span>Aforo máximo 20-25 asistentes</span>
+          <span>Aforo máximo 25-30 asistentes</span>
           <span className="w-1 h-1 rounded-full bg-[#0F0F0F]/20 hidden sm:inline-block" />
           <span>AWS Torre Pacific, Piso 14</span>
         </div>

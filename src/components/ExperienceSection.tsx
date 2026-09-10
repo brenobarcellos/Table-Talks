@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { GlassWater, Utensils, MessageSquare, Award, Camera, CheckCircle2 } from 'lucide-react';
 
 export const ExperienceSection: React.FC = () => {
-  const [selectedCategory, setSelectedCategory] = useState<'all' | 'networking' | 'dinner' | 'keynote'>('all');
+  const [selectedCategory, setSelectedCategory] = useState<'all' | 'networking' | 'cocktail' | 'keynote'>('all');
 
   const galleryItems = [
     {
@@ -19,9 +19,9 @@ export const ExperienceSection: React.FC = () => {
     },
     {
       url: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80',
-      title: 'Cena de Gala Exclusiva',
-      category: 'dinner',
-      caption: 'Ambiente distinguido diseñado para fortalecer alianzas estratégicas.',
+      title: 'Buffet Ligero & Cóctel Ejecutivo',
+      category: 'cocktail',
+      caption: 'Recepción, pasabocas y estación fija de bebidas durante el diálogo entre líderes.',
     },
     {
       url: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80',
@@ -48,7 +48,7 @@ export const ExperienceSection: React.FC = () => {
             Experiencia Letmino Table Talks
           </h2>
           <p className="text-[#F0F0EE]/70 text-base sm:text-lg">
-            Combinamos contenido de vanguardia con la calidez de una cena privada para asegurar interacciones memorables y constructivas.
+            Combinamos contenido de vanguardia con un formato vespertino de cóctel y networking de alto nivel para asegurar interacciones memorables y constructivas.
           </p>
         </div>
 
@@ -60,7 +60,7 @@ export const ExperienceSection: React.FC = () => {
             </div>
             <h3 className="font-bold text-[#F0F0EE] text-base">1. Cóctel de Bienvenida</h3>
             <p className="text-[#F0F0EE]/70 text-xs leading-relaxed">
-              Recibimiento informal para romper el hielo y entablar las primeras conversaciones entre los ejecutivos invitados.
+              Recibimiento y pasabocas entre 3:00 y 3:30 p. m. para iniciar el networking informal entre líderes.
             </p>
           </div>
 
@@ -78,9 +78,9 @@ export const ExperienceSection: React.FC = () => {
             <div className="w-10 h-10 rounded-xl bg-[#64DF65]/10 border border-[#64DF65]/30 text-[#64DF65] flex items-center justify-center">
               <Utensils className="w-5 h-5" />
             </div>
-            <h3 className="font-bold text-[#F0F0EE] text-base">3. Cena de Gala Privada</h3>
+            <h3 className="font-bold text-[#F0F0EE] text-base">3. Buffet Ligero Tipo Cóctel</h3>
             <p className="text-[#F0F0EE]/70 text-xs leading-relaxed">
-              Una experiencia gastronómica de primer nivel diseñada para propiciar el diálogo pausado e inspirador.
+              Servicio discreto durante la apertura y estación fija de bebidas y pasabocas en la sala durante las conferencias.
             </p>
           </div>
 
@@ -135,14 +135,14 @@ export const ExperienceSection: React.FC = () => {
                 Ponencias
               </button>
               <button
-                onClick={() => setSelectedCategory('dinner')}
+                onClick={() => setSelectedCategory('cocktail')}
                 className={`px-3 py-1.5 rounded-full transition cursor-pointer ${
-                  selectedCategory === 'dinner'
+                  selectedCategory === 'cocktail'
                     ? 'bg-[#64DF65] text-[#0F0F0F] font-bold'
                     : 'bg-white/5 text-[#F0F0EE]/60 hover:text-[#F0F0EE]'
                 }`}
               >
-                Cena
+                Cóctel & Pasabocas
               </button>
             </div>
           </div>

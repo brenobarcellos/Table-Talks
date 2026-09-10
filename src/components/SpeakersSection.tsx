@@ -14,25 +14,28 @@ export const SpeakersSection: React.FC<SpeakersSectionProps> = ({ onCtaClick }) 
       roleCategory: 'Amazon Web Services GTM & Expansion',
       organization: 'Amazon Web Services (AWS)',
       bio: 'Marco cuenta con más de una década impulsando el crecimiento global de compañías de software. En AWS lidera la estrategia de go-to-market e inteligencia artificial para ISVs de alto crecimiento a escala internacional.',
-      tag: 'Ponente Confirmado',
+      tag: 'Ponente Keynote AWS',
+      badgeDesc: 'Ponente Confirmado AWS',
     },
     {
-      isConfirmed: false,
-      name: 'Liderazgo Letmino Executive',
-      roleTitle: 'Executive Leadership',
-      roleCategory: 'Estrategia de Cultura Aumentada',
-      organization: 'Letmino',
-      bio: 'Decisiones humanas y cultura de aprendizaje para una organización impulsada por inteligencia artificial en América Latina a través de la Plataforma de Aprendizaje Digital de Letmino.',
-      tag: 'Executive Speaker (A confirmar)',
+      isConfirmed: true,
+      name: 'Pilar Marulanda Sánchez',
+      roleTitle: 'Vicepresidente de Talento Humano',
+      roleCategory: 'Gestión Humana & Cultura Organizacional',
+      organization: 'Cenit Transporte y Logística (Filial Grupo Ecopetrol)',
+      bio: 'Líder en gestión de talento, cultura y liderazgo corporativo. En Cenit, filial estratégica de logística de hidrocarburos del Grupo Ecopetrol, lidera la transformación del capital humano ante los retos energéticos y tecnológicos del país.',
+      tag: 'Panelista Confirmada',
+      badgeDesc: 'Líder C-Level Confirmada',
     },
     {
-      isConfirmed: false,
-      name: 'Panelistas Invitados C-Level',
-      roleTitle: 'CHROs, CTOs & VPs Enterprise',
-      roleCategory: 'Panel de Decisores Enterprise',
-      organization: 'Líderes de RRHH, TI & Digital (Banca, Retail & Servicios)',
-      bio: 'Desafíos reales de talento, reskilling corporativo y adopción de tecnología en grandes organizaciones en Colombia.',
-      tag: 'Panelistas Invitados (A confirmar)',
+      isConfirmed: true,
+      name: 'María del Pilar Carrasquilla Valbuena',
+      roleTitle: 'Gerente de Desarrollo Humano',
+      roleCategory: 'Desarrollo del Talento & Formación Corporativa',
+      organization: 'Hamburguesas El Corral (Grupo Nutresa)',
+      bio: 'Especialista en desarrollo humano, reskilling y programas continuos de capacitación a gran escala. Lidera la estrategia formativa y de talento para Hamburguesas El Corral en Grupo Nutresa, referente en consumo y retail en Colombia.',
+      tag: 'Panelista Confirmada',
+      badgeDesc: 'Líder C-Level Confirmada',
     },
   ];
 
@@ -108,7 +111,7 @@ export const SpeakersSection: React.FC<SpeakersSectionProps> = ({ onCtaClick }) 
               <div className="mt-6 pt-4 border-t border-[#0F0F0F]/10 flex items-center justify-between text-xs text-[#484848] font-mono">
                 <span className="flex items-center gap-1.5 text-[#0F0F0F] font-medium">
                   <Shield className="w-3.5 h-3.5 text-[#0F0F0F]" />
-                  {item.isConfirmed ? 'Ponente Confirmado AWS' : 'Perfil C-Level / Senior Executive'}
+                  {item.badgeDesc}
                 </span>
               </div>
             </div>
@@ -122,9 +125,9 @@ export const SpeakersSection: React.FC<SpeakersSectionProps> = ({ onCtaClick }) 
               <Sparkles className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-sm font-bold text-[#0F0F0F]">Ponentes de Alto Impacto para Letmino Table Talks</div>
+              <div className="text-sm font-bold text-[#0F0F0F]">Conferencistas y Panelistas Confirmados</div>
               <p className="text-xs text-[#484848]">
-                Acompaña a Marco Politi (AWS) y otros líderes ejecutivos en esta mesa de discusión privada sobre IA y talento.
+                Acompaña a Marco Politi (AWS), Pilar Marulanda (Cenit - Grupo Ecopetrol) y María del Pilar Carrasquilla (El Corral - Grupo Nutresa) en esta conversación estratégica.
               </p>
             </div>
           </div>

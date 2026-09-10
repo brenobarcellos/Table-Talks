@@ -62,14 +62,14 @@ export const AboutSection: React.FC = () => {
                 </div>
                 <div>
                   <div className="text-[11px] font-bold text-[#484848] uppercase tracking-wider font-mono">Formato Exclusivo</div>
-                  <div className="text-lg font-bold text-[#0F0F0F]">Cóctel Ejecutivo & Mesa Redonda</div>
+                  <div className="text-lg font-bold text-[#0F0F0F]">Buffet Ligero Tipo Cóctel & Mesa Redonda</div>
                 </div>
               </div>
 
               {/* Embedded Video */}
               <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/5 border border-[#0F0F0F]/10 shadow-inner group">
                 <iframe
-                  src="https://www.youtube.com/embed/8mOUqnPHboc?rel=0&modestbranding=1"
+                  src="https://www.youtube.com/embed/uGOjMFs9Hx0?rel=0&modestbranding=1"
                   title="Letmino Table Talks - Resumen del evento y experiencia de líderes"
                   className="absolute inset-0 w-full h-full border-0"
                   allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -81,7 +81,7 @@ export const AboutSection: React.FC = () => {
               <div className="space-y-3 pt-1 text-xs">
                 <div className="flex justify-between items-center py-1.5 border-b border-[#0F0F0F]/10">
                   <span className="text-[#484848]">Cupos totales</span>
-                  <span className="font-bold text-[#0F0F0F] font-mono">20 a 25 ejecutivos</span>
+                  <span className="font-bold text-[#0F0F0F] font-mono">25 a 30 ejecutivos</span>
                 </div>
                 <div className="flex justify-between items-center py-1.5 border-b border-[#0F0F0F]/10">
                   <span className="text-[#484848]">Sede oficial</span>

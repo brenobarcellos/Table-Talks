@@ -34,10 +34,10 @@ export const ThemesSection: React.FC = () => {
       number: '04',
       icon: Users2,
       title: 'Networking cualificado y sinergias entre HR & IT',
-      speaker: 'Cóctel & Cena de gala',
+      speaker: 'Cóctel & Networking Ejecutivo',
       description:
-        'La alineación entre las áreas de Gestión Humana y Tecnología como motor fundamental de la transformación digital sostenible en las corporaciones colombianas.',
-      badge: 'Cena Exclusiva',
+        'La alineación entre las áreas de Gestión Humana y Tecnología como motor fundamental de la transformación digital sostenible en las corporaciones colombianas, en un entorno de networking cualificado.',
+      badge: 'Networking C-Level',
     },
   ];
 

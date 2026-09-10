@@ -25,7 +25,7 @@ export const VideoSection: React.FC = () => {
         <div className="relative rounded-2xl p-2 sm:p-3 bg-white/5 border border-white/10 shadow-2xl backdrop-blur-xl hover:border-[#64DF65]/30 transition">
           <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/40 shadow-inner group">
             <iframe
-              src="https://www.youtube.com/embed/8mOUqnPHboc?rel=0&modestbranding=1"
+              src="https://www.youtube.com/embed/uGOjMFs9Hx0?rel=0&modestbranding=1"
               title="Letmino Table Talks - Resumen del evento y experiencia de líderes"
               className="absolute inset-0 w-full h-full border-0"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

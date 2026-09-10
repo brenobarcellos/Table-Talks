@@ -32,7 +32,7 @@ export const FormSection: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 pb-6 mb-8 border-b border-[#0F0F0F]/10 text-xs sm:text-sm text-[#484848]">
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-[#0F0F0F] flex-shrink-0" />
-              <span><strong className="text-[#0F0F0F]">Encuentro Exclusivo:</strong> Cupos estrictamente limitados a 20-25 decisores C-Level.</span>
+              <span><strong className="text-[#0F0F0F]">Encuentro Exclusivo:</strong> Cupos estrictamente limitados a 25-30 decisores C-Level.</span>
             </div>
             <div className="flex items-center gap-1.5 text-[#484848] font-mono">
               <Lock className="w-4 h-4 text-[#0F0F0F]" />
@@ -94,7 +94,7 @@ export const FormSection: React.FC = () => {
             <div>
               <p className="font-bold text-[#0F0F0F]">Aviso sobre el proceso de selección de participantes</p>
               <p className="mt-1 text-[#484848] text-xs leading-relaxed">
-                El envío de este formulario representa una solicitud formal de participación. Debido a que el aforo está restringido a 20-25 asistentes, el equipo de Letmino revisará cada perfil y enviará la confirmación oficial de asistencia a la dirección de correo corporativo proporcionada.
+                El envío de este formulario representa una solicitud formal de participación. Debido a que el aforo está restringido a 25-30 asistentes, el equipo de Letmino revisará cada perfil y enviará la confirmación oficial de asistencia a la dirección de correo corporativo proporcionada.
               </p>
             </div>
           </div>

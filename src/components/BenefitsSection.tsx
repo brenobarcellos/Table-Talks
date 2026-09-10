@@ -23,7 +23,7 @@ export const BenefitsSection: React.FC<BenefitsSectionProps> = ({ onCtaClick }) 
       icon: Network,
       title: 'Networking Cualificado en Entorno Exclusivo',
       description:
-        'Conecta en un espacio íntimo de cena de gala diseñado para construir relaciones duraderas de confianza profesional lejos del ruido comercial habitual.',
+        'Conecta en un espacio íntimo con buffet ligero tipo cóctel, diseñado para construir relaciones duraderas de confianza profesional lejos del ruido comercial habitual.',
     },
     {
       icon: TrendingUp,

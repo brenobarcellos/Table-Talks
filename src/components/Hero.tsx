@@ -60,7 +60,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
                 <Clock className="w-3.5 h-3.5 text-[#0F0F0F]" /> Horario
               </div>
               <div className="text-sm sm:text-base font-bold text-[#0F0F0F] font-mono">
-                After Office (3:00 PM)
+                3:00 a 6:15 PM
               </div>
             </div>
 
@@ -69,7 +69,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
                 <MapPin className="w-3.5 h-3.5 text-[#0F0F0F]" /> Sede
               </div>
               <div className="text-sm sm:text-base font-bold text-[#0F0F0F] leading-tight font-mono">
-                Oficinas AWS,<br />Torre Pacific
+                Oficinas AWS,<br />Torre Pacific, P. 14
               </div>
             </div>
 
@@ -79,7 +79,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
                 <Users className="w-3.5 h-3.5 text-[#0F0F0F]" /> Exclusividad
               </div>
               <div className="text-sm sm:text-base font-bold text-[#0F0F0F] font-mono">
-                20-25 decisores
+                25-30 decisores
               </div>
             </div>
           </div>
